@@ -1,0 +1,39 @@
+.weathercard {
+  margin-top: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-family: 'Staatliches', sans-serif;
+}
+
+.weathercardClear {
+  background-image: url(../clear.jpg);
+  background-size: cover;
+}
+
+.weathercardClouds {
+  background-image: url(../clouds.jpg);
+  background-size: cover;
+}
+
+.weathercardRain {
+  background-image: url(../rain.jpg);
+  background-size: cover;
+}
+
+.weathercardSnow {
+  background-image: url(../snow.jpg);
+  background-size: cover;
+}
+
+.weathercardMist {
+  background-image: url(../mist.jpg);
+  background-size: cover;
+}
+
+
+
