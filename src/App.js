@@ -23,7 +23,7 @@ class App extends Component {
 
   getWeather = (e) => {
     e.preventDefault();
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${e.target.elements.city.value},${e.target.elements.country.value}&units=imperial&appid=${API_KEY}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.elements.city.value},${e.target.elements.country.value}&units=imperial&appid=${API_KEY}`)
     .then(response => response.json())
     .then(data => this.setState({ temperature: data.main.temp, description: data.weather[0].description, city: data.name, country: data.sys.country, error: false, showWeatherData: true}))
     .catch(error => this.setState({error: true, showWeatherData: false}))
